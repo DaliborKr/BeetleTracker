@@ -14,7 +14,10 @@
 ## Abstract
 This work addresses the problem of tracking many beetles in top-down view video recordings, specifically Tenebrio molitor species. The objective was to develop a tool for long-term tracking of individual beetles, emphasizing maintaining consistent identities across frames. An annotated dataset was prepared to support this goal, and a YOLOv11m detection model was fine-tuned. The system integrates the ByteTrack and BoT-SORT tracking algorithms, which were selected for efficiency and accuracy. The resulting solution enables automated beetle movement and behavior analysis, providing valuable data for biological research based on video recordings.
 
-# TODO - Video DEMO
+
+
+https://github.com/user-attachments/assets/af037b47-c1bf-4f78-8db7-c63bea533c56
+
 
 ## Installation
 

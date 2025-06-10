@@ -1,4 +1,4 @@
-# Beetle Tracker – Tenebrio Molitor
+# Beetle Tracker
 
 #### Authors:
 - Dalibor Kříčka
@@ -21,21 +21,15 @@ https://github.com/user-attachments/assets/af037b47-c1bf-4f78-8db7-c63bea533c56
 
 ## Installation
 
-Install necessary modules in this order: 
-
-### 1. Install Ultralytics
+Install necessary module: 
 
 ```
 pip install ultralytics
 ```
 
-### 2. Install OpenCV
+### On a headless systems:
 
-``` 
-pip install opencv-python
-```
-
-Or for a headless version:
+Install additional module:
 
 ``` 
 pip install opencv-python-headless
@@ -81,9 +75,6 @@ The dataset is available in directory `\dataset\dataset_detection`. It contains 
 
 The mentioned pairs can be arbitrarily transferred between those datasets as needed when training a detection model.
 
-### Tracking
-
-# TODO?
 
 ## Detection model
 The `model.pt` model is a fine-tuned YOLOv11m detection model for the specified dataset and is provided for the tracking algorithms (see the program argument `--model` under the `Usage` section).

@@ -21,10 +21,28 @@ https://github.com/user-attachments/assets/af037b47-c1bf-4f78-8db7-c63bea533c56
 
 ## Installation
 
-# TODO - Installation
+Install necessary modules in this order: 
+
+### 1. Install Ultralytics
+
+```
+pip install ultralytics
+```
+
+### 2. Install OpenCV
+
+``` 
+pip install opencv-python
+```
+
+Or for a headless version:
+
+``` 
+pip install opencv-python-headless
+```
 
 ## Usage
-The script loads a pre-trained detection model and begins tracking beetle trajectories using the selected algorithm on the chosen video. 
+The script `beetle_tracker.py` loads a pre-trained detection model and begins tracking beetle trajectories using the selected algorithm on the chosen video. 
 
 You can view the current bounding boxes and beetle trajectories using GUI (--show). It's also possible to save this output as a video (--save_video). The primary use is the ability to output trajectories in JSON format.
 
@@ -61,11 +79,14 @@ The dataset is available in directory `\dataset\dataset_detection`. It contains 
 - Training dataset,
 - Validation dataset.
 
-The mentioned pairs can be arbitrarily transferred between those datasets as needed.
+The mentioned pairs can be arbitrarily transferred between those datasets as needed when training a detection model.
 
 ### Tracking
 
 # TODO?
+
+## Detection model
+The `model.pt` model is a fine-tuned YOLOv11m detection model for the specified dataset and is provided for the tracking algorithms (see the program argument `--model` under the `Usage` section).
 
 ## Tracker Output
 The output of the script is a JSON file that holds data on individual beetle trajectories (Multi-Object Tracking results). This JSON file can be further processed for subsequent analysis of the trajectories.

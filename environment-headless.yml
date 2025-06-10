@@ -9,4 +9,4 @@ dependencies:
     - ultralytics
   
   - pip:
-    - opencv-python
+    - opencv-python-headless

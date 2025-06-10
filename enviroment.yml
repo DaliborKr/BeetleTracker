@@ -1,9 +1,0 @@
-name: beetle-tracker-env
-
-channels:
-  - conda-forge
-  - defaults
-
-dependencies:
-  - opencv
-  - ultralytics

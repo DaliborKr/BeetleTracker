@@ -122,10 +122,10 @@ while cap.isOpened() and not kill_signal:
             video_writer.write(annotated_frame)
 
         # Display the annotated frame
-        if (show): cv2.imshow("YOLO11 Tracking", annotated_frame)
-        # Break the loop if 'q' is pressed
-        if cv2.waitKey(1) & 0xFF == ord("q"):
-            break
+        if (show): 
+            cv2.imshow("YOLO11 Tracking", annotated_frame)
+            if cv2.waitKey(1) & 0xFF == ord("q"):
+                break
     else:
         # Break the loop if the end of the video is reached
         break
